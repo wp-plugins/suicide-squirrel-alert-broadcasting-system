@@ -77,7 +77,7 @@ function widget_squirrel_threat_init() {
 			echo '<p class="sstl_remark">'.$remark.'</p>';
 			echo $after_widget;
 		} else {
-			echo "<br /> Level 1 Squirrel Emergency! PANIC!"
+			echo "<br /> Level 1 Squirrel Emergency! PANIC!";
 		}
 	}
 
