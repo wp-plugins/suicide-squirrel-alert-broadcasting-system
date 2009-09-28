@@ -4,8 +4,9 @@ Plugin Name: Suicide Squirrel Threat Meter
 Description: Adds a sidebar widget that connects to the Suicide Squirrel Advisory Broadcasting System, and loads the correct image to indicate the current threat of suicidal squirral activity, as established by SCIENCE! Do your part to counter the Global Squirrel Insurgency!
 Author: Jerry Seeger
 License: GPL vs3.0 or higher.
-Version: 1.0
+Version: 1.0.1
 Author URI: http://muddledramblings.com
+Plugin URI: http://muddledramblings.com/suicide-squirrel-widget
 */
 
 // Put functions into one big function we'll call at the plugins_loaded
