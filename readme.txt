@@ -4,7 +4,7 @@ Donate link: http://muddledramblings.com/suicide-squirrel-widget/
 Tags: silly, useless, squirrel
 Requires at least: 2.7 and PHP 5
 Tested up to: 2.8.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 Adds a sidebar widget to alert the masses to the current Suicide Squirrel Threat Level.
 
