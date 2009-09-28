@@ -43,7 +43,7 @@ That's better, but not very specific. This is a pretty simple Widgit, but it req
 
 = Is that all it does? Put up an ugly picture? =
 
-NO! Not only does it put up an ugly picture, it sets the alt and title attribures of the picture as well! Optioinally, it links back to the Command Cennter Advisory page so your viewers will know what to do.
+NO! Not only does it put up an ugly picture, it sets the alt and title attribures of the picture as well! Optioinally, it links back to the Command Center Advisory page so your viewers will know what to do.
 
 == Screenshots ==
 
