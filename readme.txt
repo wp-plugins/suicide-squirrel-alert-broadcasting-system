@@ -51,6 +51,9 @@ NO! Not only does it put up an ugly picture, it sets the alt and title attribure
 
 == Changelog ==
 
+= 1.0.2 =
+* Fixed an error in the error-handling code.
+
 = 1.0.1 =
 * Changed a couple of paths in the documentation. No biggie.
 
