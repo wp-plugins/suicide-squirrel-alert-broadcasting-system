@@ -4,8 +4,9 @@ Plugin Name: Suicide Squirrel Threat Meter
 Description: Adds a sidebar widget that connects to the Suicide Squirrel Advisory Broadcasting System, and loads the correct image to indicate the current threat of suicidal squirral activity, as established by SCIENCE! Do your part to counter the Global Squirrel Insurgency!
 Author: Jerry Seeger
 License: GPL vs3.0 or higher.
-Version: 1.0
+Version: 1.0.3
 Author URI: http://muddledramblings.com
+Plugin URI: http://muddledramblings.com/suicide-squirrel-widget
 */
 
 // Put functions into one big function we'll call at the plugins_loaded
@@ -26,16 +27,20 @@ function widget_squirrel_threat_init() {
 		//print_r($raw_data);
 
 		if ($raw_data) {
-			if (!function_exists('simplexml_load_string') ) {
-				echo 'Dude, you need PHP 5 on your server for this. If you have PHP 5 but turned off simpleXML, go and turn it back on. The Squirrels compel you.';
-			}
-			else {
-				$data = simplexml_load_string($raw_data);
-			}
+			$parser = xml_parser_create();
+			xml_parser_set_option($parser, XML_OPTION_SKIP_WHITE, 1);
+			xml_parser_set_option($parser, XML_OPTION_CASE_FOLDING, 0);
+			xml_parse_into_struct($parser, $raw_data, $items);
+			xml_parser_free($parser);
 			
+			foreach($items as $item) {
+				if ($item['type'] == 'complete') {
+					$data->$item['tag'] = $item['value'];
+				}
+			}
 		}
 		else {
-			echo "<br>Error connecting to Suicide Squirrel Alert Broadcasting Syetem. Protect your nuts and pray to whatever's handy that this isn't the start of something big.";
+			echo "<br>Error connecting to Suicide Squirrel Alert Broadcasting Syetem. Protect your nuts and pray to whatever's handy that this isn't the start of something big.<br /><br />";
 		}
 
 		return $data;
@@ -60,7 +65,9 @@ function widget_squirrel_threat_init() {
 			$remark = $options['remark'];
 			$do_link = $options['do_link'];
 			
-			echo $before_widget . $before_title . $title . $after_title;
+			echo $before_widget;
+			if (strlen($title) > 0)
+				echo $before_title . $title . $after_title;
 			
 	
 			echo '<div class="sstl_display" style="text-align:center;">';
@@ -73,10 +80,11 @@ function widget_squirrel_threat_init() {
 			}
 			echo '</div>';
 			
-			echo '<p class="sstl_remark">'.$remark.'</p>';
+			if (strlen($remark) > 0)
+				echo '<p class="sstl_remark">'.$remark.'</p>';
 			echo $after_widget;
 		} else {
-			echo "<br /> Level 1 Squirrel Emergency! PANIC!"
+			echo "<br /> Level 1 Squirrel Emergency! PANIC!";
 		}
 	}
 

@@ -2,9 +2,9 @@
 Contributors: vikingjs
 Donate link: http://muddledramblings.com/suicide-squirrel-widget/
 Tags: silly, useless, squirrel
-Requires at least: 2.7 and PHP 5
+Requires at least: 2.7
 Tested up to: 2.8.4
-Stable tag: trunk
+Stable tag: 1.0.3
 
 Adds a sidebar widget to alert the masses to the current Suicide Squirrel Threat Level.
 
@@ -12,7 +12,7 @@ Adds a sidebar widget to alert the masses to the current Suicide Squirrel Threat
 
 This widget will check in with the central command center and display the appropriate graphic reflecting the current Suicide Squirrel Threat Level. The threat level is based on rigorous scientific research, monitoring squirrel 'chatter' in channels generally associated with squirrel activity.
 
-The Suicide Squirrel Advisory System is designed with Science to guide our protective measures when specific information to a particular sector or geographic region is received. ÊIt combines threat information with vulnerability assessments and provides communications to public safety officials and the public. Ê
+The Suicide Squirrel Advisory System is designed with Science to guide our protective measures when specific information to a particular sector or geographic region is received. It combines threat information with vulnerability assessments and provides communications to public safety officials and the public.
 
 The Color-coded Threat Level System is used to communicate with public safety officials and the public at-large through a threat-based, color-coded system so that protective measures can be implemented to reduce the likelihood or impact of squirrel suicide.
 
@@ -39,17 +39,27 @@ That's not a question.
 
 = Why doesn't it work? =
 
-That's better, but not very specific. This is a pretty simple Widgit, but it requires that your server has simpleXML. simpleXML is turned on by default for (almost) any server running PHP5. Do you get a message about simpleXML? Why didn't you say so!
+That's better, but not very specific. This is a pretty simple Widget, but it requires that your server has simpleXML. simpleXML is turned on by default for (almost) any server running PHP5. Do you get a message about simpleXML? Why didn't you say so!
 
 = Is that all it does? Put up an ugly picture? =
 
-NO! Not only does it put up an ugly picture, it sets the alt and title attribures of the picture as well! Optioinally, it links back to the Command Cennter Advisory page so your viewers will know what to do.
+NO! Not only does it put up an ugly picture, it sets the alt and title attribures of the picture as well! Optioinally, it links back to the Command Center Advisory page so your viewers will know what to do.
 
 == Screenshots ==
 
 1. Condition yellow! Protect your nuts!
 
 == Changelog ==
+
+= 1.0.3 =
+* Works on servers with older versions of PHP.
+* Works better with no title and no snide comment (does not add unneeded stuff to sidebar)
+
+= 1.0.2 =
+* Fixed an error in the error-handling code.
+
+= 1.0.1 =
+* Changed a couple of paths in the documentation. No biggie.
 
 = 1.0 =
 * First release.
