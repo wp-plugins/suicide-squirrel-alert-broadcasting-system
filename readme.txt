@@ -2,9 +2,9 @@
 Contributors: vikingjs
 Donate link: http://muddledramblings.com/suicide-squirrel-widget/
 Tags: silly, useless, squirrel
-Requires at least: 2.7 and PHP 5
+Requires at least: 2.7
 Tested up to: 2.8.4
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 
 Adds a sidebar widget to alert the masses to the current Suicide Squirrel Threat Level.
 
@@ -39,7 +39,7 @@ That's not a question.
 
 = Why doesn't it work? =
 
-That's better, but not very specific. This is a pretty simple Widgit, but it requires that your server has simpleXML. simpleXML is turned on by default for (almost) any server running PHP5. Do you get a message about simpleXML? Why didn't you say so!
+That's better, but not very specific. This is a pretty simple Widget, but it requires that your server has simpleXML. simpleXML is turned on by default for (almost) any server running PHP5. Do you get a message about simpleXML? Why didn't you say so!
 
 = Is that all it does? Put up an ugly picture? =
 
@@ -50,6 +50,10 @@ NO! Not only does it put up an ugly picture, it sets the alt and title attribure
 1. Condition yellow! Protect your nuts!
 
 == Changelog ==
+
+= 1.0.3 =
+* Works on servers with older versions of PHP.
+* Works better with no title and no snide comment (does not add unneeded stuff to sidebar)
 
 = 1.0.2 =
 * Fixed an error in the error-handling code.
