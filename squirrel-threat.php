@@ -74,7 +74,7 @@ function widget_squirrel_threat_init() {
 			if ($do_link == 'Yes') {
 				echo '<a href="'.$linkURI.'">';
 			}
-			echo '<img src="'.$imageURI.'" alt="Suicide Squirrel Alert Level" title="Suicide Squirrel Alert Level: '.$color.'; chatter: '.$chatter.'">';
+			echo '<img src="'.$imageURI.'" alt="Suicide Squirrel Alert Level" title="Suicide Squirrel Alert Level: '.$color.'; chatter: '.$chatter.'" />';
 			if ($do_link == 'Yes') {
 				echo '</a>';
 			}
