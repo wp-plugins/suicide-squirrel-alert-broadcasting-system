@@ -3,8 +3,8 @@ Contributors: vikingjs
 Donate link: http://muddledramblings.com/suicide-squirrel-widget/
 Tags: silly, useless, squirrel
 Requires at least: 2.7
-Tested up to: 2.8.4
-Stable tag: 1.0.3
+Tested up to: 2.9.2
+Stable tag: 1.0.4
 
 Adds a sidebar widget to alert the masses to the current Suicide Squirrel Threat Level.
 
