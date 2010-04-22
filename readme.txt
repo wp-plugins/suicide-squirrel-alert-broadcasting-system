@@ -10,7 +10,9 @@ Adds a sidebar widget to alert the masses to the current Suicide Squirrel Threat
 
 == Description ==
 
-This widget will check in with the central command center and display the appropriate graphic reflecting the current Suicide Squirrel Threat Level. The threat level is based on rigorous scientific research, monitoring squirrel 'chatter' in channels generally associated with squirrel activity.
+This widget is a frivilous bit of fluffery that wastes your precious sidebar space by putting in an ugly graphic. It's kind of funny, though.
+
+Here's how it works: widget will check in with the central command center and display the appropriate graphic reflecting the current Suicide Squirrel Threat Level. The threat level is based on rigorous scientific research, monitoring squirrel 'chatter' in channels generally associated with squirrel activity.
 
 The Suicide Squirrel Advisory System is designed with Science to guide our protective measures when specific information to a particular sector or geographic region is received. It combines threat information with vulnerability assessments and provides communications to public safety officials and the public.
 
