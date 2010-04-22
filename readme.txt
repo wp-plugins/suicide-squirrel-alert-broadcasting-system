@@ -51,6 +51,9 @@ NO! Not only does it put up an ugly picture, it sets the alt and title attribure
 
 == Changelog ==
 
+= 1.0.4 =
+* TERRIFICALLY MINOR change for XHTML compliance
+
 = 1.0.3 =
 * Works on servers with older versions of PHP.
 * Works better with no title and no snide comment (does not add unneeded stuff to sidebar)
